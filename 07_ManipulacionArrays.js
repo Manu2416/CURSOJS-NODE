@@ -90,3 +90,15 @@ var estudiantes = [
 var filtrado = estudiantes.filter((estudiante)=> estudiante.edad >= 25 && estudiante.matriculado == false);
 console.log(estudiantes);
 console.log(filtrado);
+
+// - Reduce
+
+var calificaciones = [3,5,9,10,10];
+
+var suma = calificaciones.reduce((acumulador,calificacion)=> acumulador += calificacion,0);
+console.log(suma);
+console.log(suma / calificaciones.length) ; // media 
+
+var edades = [21,22,34,55,32,43,33,22,10,23];
+
+var resultado = edades.reduce((acumulador) =>{},)
